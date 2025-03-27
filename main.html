@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: lightgray;
+        }
+
+        form {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 5px gray;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showMessage(e) {
+            e.preventDefault();
+            alert("Registration Completed!");
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Register Here</h2>
+    <form onsubmit="showMessage(event)">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <input type="password" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>
